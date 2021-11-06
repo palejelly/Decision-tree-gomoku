@@ -1,0 +1,25 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="m_map <= 2.5\nsamples = 18\nvalue = [8, 10]", fillcolor="#399de533"] ;
+1 [label="m_map <= 0.5\nsamples = 9\nvalue = [5, 4]", fillcolor="#e5813933"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="samples = 4\nvalue = [1, 3]", fillcolor="#399de5aa"] ;
+1 -> 2 ;
+3 [label="m_map <= 1.5\nsamples = 5\nvalue = [4, 1]", fillcolor="#e58139bf"] ;
+1 -> 3 ;
+4 [label="samples = 3\nvalue = [2, 1]", fillcolor="#e581397f"] ;
+3 -> 4 ;
+5 [label="samples = 2\nvalue = [2, 0]", fillcolor="#e58139ff"] ;
+3 -> 5 ;
+6 [label="m_map <= 3.5\nsamples = 9\nvalue = [3, 6]", fillcolor="#399de57f"] ;
+0 -> 6 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+7 [label="samples = 3\nvalue = [0, 3]", fillcolor="#399de5ff"] ;
+6 -> 7 ;
+8 [label="m_map <= 4.5\nsamples = 6\nvalue = [3, 3]", fillcolor="#e5813900"] ;
+6 -> 8 ;
+9 [label="samples = 1\nvalue = [1, 0]", fillcolor="#e58139ff"] ;
+8 -> 9 ;
+10 [label="samples = 5\nvalue = [2, 3]", fillcolor="#399de555"] ;
+8 -> 10 ;
+}
